@@ -17,8 +17,18 @@ git_branch_color() {
 }
 
 #display of the git branch in bold and in color
-git_output() {
+git_branch() {
 	echo "%B$(git_branch_color)$(git_prompt_info)%f%b"
+}
+
+#is displayed if you are in a git repo
+git_output() {
+	if [[ "$(git_prompt_info)" != "" ]]
+	then
+		echo "- $(around_color)[%f$(git_branch)$(around_color)]"
+	else
+		echo "$(around_color)"
+	fi
 }
 
 #display of the path in bold and in color
@@ -50,6 +60,6 @@ ZSH_THEME_GIT_PROMPT_DIRTY=""
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # putting it all together
-PROMPT='$(around_color)┌─[%f$(path_output)$(smiley) $(username_output)$(around_color)]%f - $(around_color)[%f$(git_output)$(around_color)]
+PROMPT='$(around_color)┌─[%f$(path_output)$(smiley) $(username_output)$(around_color)]%f $(git_output)
 └─[%f$(smiley)$(around_color)]%f '
 RPROMPT='$(current_time)'
