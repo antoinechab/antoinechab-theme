@@ -9,4 +9,4 @@ git clone this in ```~/.oh-my-zsh/themes```
 
 edit ```~/.zshrc```
 
-```ZSH_THEME="THE_FILE_NAME_BEFORE_THE_DOT"```
+```ZSH_THEME="achab"```
