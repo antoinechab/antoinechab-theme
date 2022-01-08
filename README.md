@@ -19,11 +19,11 @@ this theme displays the current folder path, the current user and the current gi
 
 the theme looks like this when we are in a git repository
 
-![git repo](https://github.com/antoinechab/zsh-theme.git/main/images/them-with-git.png)
+![git repo](https://github.com/antoinechab/zsh-theme/blob/main/images/them-with-git.png)
 
 the theme looks like this when we are not in a git repository
 
-![not a git repo](https://github.com/antoinechab/zsh-theme.git/main/images/them-without-git.png)
+![not a git repo](https://github.com/antoinechab/zsh-theme/blob/main/images/theme-without-git.png)
 
 ##update
 you can simply update these functions to change the colors wherever they appear
