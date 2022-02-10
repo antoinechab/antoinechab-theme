@@ -1,7 +1,7 @@
 # zsh-theme
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-##install
+## install
 
 oh my zsh theme. mix duellj with git branch
 
@@ -15,7 +15,7 @@ edit ```~/.zshrc```
 
 ```ZSH_THEME="achab"```
 
-##Exemple
+## Exemple
 
 this theme displays the current folder path, the current user and the current git branch if we are in a git repository
 
@@ -27,7 +27,7 @@ the theme looks like this when we are not in a git repository
 
 ![not a git repo](https://github.com/antoinechab/zsh-theme/blob/main/images/theme-without-git.png)
 
-##update
+## update
 
 you can simply update these functions to change the colors wherever they appear
 ```bash
